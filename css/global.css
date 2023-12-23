@@ -400,3 +400,13 @@ th, td {
 th {
   background-color: #8888882a;
 }
+.underweight {
+  color: #0044ff; 
+}
+.normal-weight {
+  color: #008000; 
+}
+
+.overweight {
+  color: #FF0000;
+}
