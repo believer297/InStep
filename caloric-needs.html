@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caloric needs</title>
+         
+          <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+      
+         
+          <link rel="stylesheet" href="css/global.css" />
+          <link rel="stylesheet" media="(max-width:768px)" href="css/tablet.css" />
+          <link rel="stylesheet" media="(max-width:512px)" href="css/mobile.css" />
+          <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+
+</head>
+<body>
+
+    <header>
+      <nav id="navbar">
+        <a href="index.html"><h2>Instep</h2></a>
+        <ul>
+          <li><a href="bmi-calculator.html">BMI</a></li>
+          <li><a href="caloric-needs.html">Caloric Needs</a></li>
+          <li><a href="workout-planning.html">Workout Planning</a></li>
+          <li><a href="exercise-guide.html">Exercise Guide</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <section id="caloric-needs" class="page page-dark">
+      <h1>CALORIC NEEDS</h1><br />
+      <p
+        >The Calorie Calculator can be used to estimate the number of calories a person needs to consume each day. This
+        calculator can also provide some simple guidelines for gaining or losing weight.</p
+      >
+      <br /><hr /><br />
+      <h1>Calorie Needing Calculator</h1>
+      <div class="container">
+        <form id="calorie-form">
+          Gender: <br />
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br />
+          <label for="age">Age:</label><br />
+          <input type="text" id="age" placeholder="15-80 years" /><br />
+          <label for="calorie-height">Height:</label><br />
+          <input type="text" id="calorie-height" placeholder="Centimeters" /><br />
+          <label for="calorie-weight">Weight:</label><br />
+          <input type="text" id="calorie-weight" placeholder="Kilograms" /><br />
+          <label for="activity">Activity:</label><br />
+          <select name="activity" id="activity">
+            <option value="basal">Basal Metabolic Rate (BMR)</option>
+            <option value="sedentary">Sedentary: little or no exercise</option>
+            <option value="light">Light: exercise 1-3 times/week</option>
+            <option value="moderate">Moderate: exercise 4-5 times/week</option>
+            <option value="active">Active: daily exercise or intense exercise 3-4 times/week</option>
+            <option value="very-active">Very Active: intense exercise 6-7 times/week</option>
+            <option value="extra-active">Extra Active: very intense exercise daily or physical job</option> </select
+          ><br /><br />
+          <span id="calorie-submit" class="btn btn-blue">Submit</span>
+        </form>
+        <div class="list-box">
+          <br /><h4 id="calorie-result">YOUR CALORIE NEEDING = [Not Entered]</h4><br />
+          <h3>Guideline:</h3>
+          <ul>
+            <li>To Lose Weight: Take 250-500 minus your calorie needing.</li>
+            <li>To Maintain: Take 0-200 minus or 0-200 plus your calorie needing.</li>
+            <li>To Gain Weight: Take 250-500 plus your calorie needing.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+<script src="js/cal.js"></script>
+</body>
+</html>

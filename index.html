@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>InStep Gym</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" media="(max-width:768px)" href="css/tablet.css" />
+    <link rel="stylesheet" media="(max-width:512px)" href="css/mobile.css" />
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  <style>
+    .wow:first-child {
+      visibility: hidden;
+    }
+  </style>
+  
+</head>
+<body>
+ 
+    <header>
+      <nav id="navbar">
+        <a href="index.html"><h2>Instep</h2></a>
+        <ul>
+          <li><a href="bmi-calculator.html">BMI</a></li>
+          <li><a href="caloric-needs.html">Caloric Needs</a></li>
+          <li><a href="workout-planning.html">Workout Planning</a></li>
+          <li><a href="exercise-guide.html">Exercise Guide</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  
+  <section class="home wow flash page-light " id="home">
+   
+  	 <div class="container">
+      
+  	 	  <h1 class="wow slideInLeft" data-wow-delay="1s">It's <span>gym</span> time. Let's go</h1>
+  	 	  <h1 class="wow slideInRight" data-wow-delay="1s">We are ready to <span>fit you</span></h1>
+  	 </div>
+     
+  	  
+  	      <a href="#about" class="go-down">
+  	      	  <i class="fa fa-angle-down" aria-hidden="true"></i>
+  	      </a>
+  	
+
+  </section>
+ 
+  
+
+
+  <div>
+  <video id="video"  autoplay loop muted>
+    
+    <source src="vid/gym.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+
+
+
+<script src="js/wow.min.js"></script>
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       0,
+      }
+    );
+    wow.init();
+  </script>
+</body>
+</html>
+
+
+
+
+
+
